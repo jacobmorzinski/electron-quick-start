@@ -1,11 +1,29 @@
 {
-  "name": "electron-quick-start",
+  "name": "jacobs-electron-quick-start",
   "version": "0.1.0",
+  "license": "MIT",
+  "description": "Working through an Electron quick start",
+  "author": "Jacob Morzinski <morzinski@gmail.com>",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "build": {
+    "appId": "Morzinski.DemoQuickStart.Electron.Beta",
+    "mac": {
+      "category": "public.app-category.developer-tools"
+    },
+    "win": {}
   },
   "devDependencies": {
+    "electron-builder": "^10.13.1",
     "electron-prebuilt": "^1.4.13"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jacobmorzinski/electron-quick-start.git"
   }
+  
 }
